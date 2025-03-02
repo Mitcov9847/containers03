@@ -50,7 +50,7 @@ mkdir site echo "<h6>Привет, Docker!</h6>" > site/index.html
 ## 4. Сборка Docker-образа
 
 Для сборки Docker-образа я выполнил команду:
-docker build -t containers03 
+- docker build -t containers03 
 
 ![alt text](/image/image-4.png)
 Docker-образ был успешно собран и помечен как containers03.
@@ -61,7 +61,7 @@ Docker-образ был успешно собран и помечен как co
 
 Я запустил контейнер и проверил его работу, выполнив команду:
 
-docker run --name containers03 containers03
+- docker run --name containers03 containers03
 ![alt text](/image/image-5.png)
 ##### Проверил его работу и удалил контейнер перед повторным запуском в интерактивном режиме.
 

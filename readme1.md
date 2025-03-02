@@ -10,7 +10,7 @@
 После установки я проверил корректность работы Docker, выполнив в терминале команду:  docker --version
 
 Результат, который я получил:
-![alt text](image.png)
+![alt text](/image/image.png)
 
 2. Клонирование репозитория
 
@@ -19,7 +19,7 @@
 git clone https://github.com/Mitcov9847/containers03.git
 
 Результат, который я получил:
-![alt text](image-1.png)
+![alt text](/image/image-1.png)
 
 3. Создание Dockerfile и структуры проекта
 
@@ -28,7 +28,7 @@ git clone https://github.com/Mitcov9847/containers03.git
 FROM debian:latest
 COPY ./site/ /var/www/html/
 CMD ["sh", "-c", "echo hello from $HOSTNAME"]
-![alt text](image-2.png)
+![alt text](/image/image-2.png)
 
 3.2 Создание папки site и index.html
 
@@ -37,13 +37,13 @@ mkdir site
 echo "<h1>Привет, Docker!</h1>" > site/index.html
 
 После этого я проверил содержимое папки:
-![alt text](image-3.png)
+![alt text](/image/image-3.png)
 
 4. Сборка Docker-образа
 
 Для сборки Docker-образа я выполнил команду:
 docker build -t containers03 .
-![alt text](image-4.png)
+![alt text](/image/image-4.png)
 Успешная сборка Docker-образа
 
 5. Запуск контейнера и тестирование
@@ -53,17 +53,17 @@ docker build -t containers03 .
 Я запустил контейнер и проверил его работу, выполнив команду:
 
 docker run --name containers03 containers03
-![alt text](image-5.png)
+![alt text](/image/image-5.png)
 Запуск контейнера и вывод сообщения
 
 1️⃣ Я удалил контейнер перед повторным запуском:
-![alt text](image-6.png)
+![alt text](/image/image-6.png)
 
 2️⃣ Затем я запустил контейнер в интерактивном режиме (bash):
-![alt text](image-8.png)
+![alt text](/image/image-8.png)
 
 3️⃣ Внутри контейнера я выполнил следующие команды:
-![alt text](image-9.png)
+![alt text](/image/image-9.png)
 Проверка файлов внутри контейнера
 
 4️⃣ После этого я вышел из контейнера:

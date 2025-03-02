@@ -20,7 +20,6 @@
 После установки я проверил корректность работы Docker, выполнив в терминале команду:  docker --version
 
 ![alt text](/image/image.png)
-Результат, который я получил:
 
 ## 2. Клонирование репозитория
 2.1 Клонирование через git clone
@@ -43,7 +42,7 @@ CMD ["sh", "-c", "echo hello from $HOSTNAME"]
 
 Я создал папку site и файл index.html с помощью следующих команд:
 
-mkdir site echo "<h6>Привет, Docker!</h6>" > site/index.html
+- mkdir site echo "<h6>Привет, Docker!</h6>" > site/index.html
 
 После этого я проверил содержимое папки:
 ![alt text](/image/image-3.png)

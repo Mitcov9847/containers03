@@ -1,7 +1,5 @@
 # Отчет по работе с Docker
 
-## 1. Подготовка
-
 ### 1.1 Установка Docker Desktop
 
 Перед началом работы я установил **Docker Desktop**. Для этого загрузил установщик с официального сайта:  
@@ -12,7 +10,7 @@
 ![alt text](/image/image.png)
 Результат, который я получил:
 
-2. Клонирование репозитория
+## 2. Клонирование репозитория
 2.1 Клонирование через git clone
 Затем я открыл терминал (cmd) и выполнил команду:
 git clone https://github.com/Mitcov9847/containers03.git
@@ -20,16 +18,16 @@ git clone https://github.com/Mitcov9847/containers03.git
 Результат, который я получил:
 ![alt text](/image/image-1.png)
 
-3. Создание Dockerfile и структуры проекта
+## 3. Создание Dockerfile и структуры проекта
 
-3.1 Создание Dockerfile
+#### 3.1 Создание Dockerfile
 Я создал файл Dockerfile в корневой папке containers03 и добавил в него следующий код:
 FROM debian:latest
 COPY ./site/ /var/www/html/
 CMD ["sh", "-c", "echo hello from $HOSTNAME"]
 ![alt text](/image/image-2.png)
 
-3.2 Создание папки site и index.html
+### 3.2 Создание папки site и index.html
 
 Я создал папку site и файл index.html с помощью следующих команд:
 mkdir site
@@ -38,16 +36,16 @@ echo "<h1>Привет, Docker!</h1>" > site/index.html
 После этого я проверил содержимое папки:
 ![alt text](/image/image-3.png)
 
-4. Сборка Docker-образа
+## 4. Сборка Docker-образа
 
 Для сборки Docker-образа я выполнил команду:
 docker build -t containers03 .
 ![alt text](/image/image-4.png)
 Успешная сборка Docker-образа
 
-5. Запуск контейнера и тестирование
+## 5. Запуск контейнера и тестирование
 
-5.1 Запуск контейнера
+### 5.1 Запуск контейнера
 
 Я запустил контейнер и проверил его работу, выполнив команду:
 
@@ -68,11 +66,11 @@ docker run --name containers03 containers03
 4️⃣ После этого я вышел из контейнера:
 exit
 
-6. Итоги работы
+## 6. Итоги работы
 ✅ Docker-образ успешно создан и запущен
 ✅ Контейнер работает корректно
 ✅ Файл index.html передался внутрь контейнера
 
-7. Используемые источники
+## 7. Используемые источники
 Официальная документация Docker: https://docs.docker.com/
 Репозиторий проекта на GitHub: https://github.com/Mitcov9847/containers03
